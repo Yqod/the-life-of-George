@@ -1,0 +1,144 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: Inter;
+}
+
+.container {
+  margin: 45px 40px;
+}
+
+header {
+  background: #F55A5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 55px;
+ 
+}
+
+header > img {
+  width: 40px;
+  margin-right: 7px;
+}
+
+header > h1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+article.journal-entry {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+article.journal-entry .marker {
+  width: 25px;
+  margin-right: 4px;
+}
+
+article.journal-entry .main-image-container {
+    width: 128px;
+    height: 208px;
+    overflow: hidden;
+    border-radius: 7px;  
+    flex-shrink: 0;
+    margin-right: 19px;
+    display: flex;      
+    align-items: center;  
+    justify-content: center; 
+}
+article.journal-entry .thumbnail {  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: inherit;  
+}
+
+article.journal-entry .main-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+article.journal-entry .main-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: inherit;
+}
+.info-container span.country {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 12px;
+}
+
+.info-container a {
+  color: #2B283A;
+  font-size: 0.7rem;
+}
+
+.info-container a:visited {
+  color: #918E9B;
+}
+
+.info-container h2.entry-title {
+  margin-top: 7px;
+  margin-bottom: 17px;
+}
+
+.info-container p.trip-dates {
+  font-weight: bold;
+}
+
+.info-container p.entry-text {
+  line-height: 1.5;
+  font-size: 0.98rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.info-container hr {
+  margin: 5px 0; 
+}
+.info-container p.journal-text {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  margin-top: 5px;
+}
+.likeButtonContainer {
+    margin-top: 5px;  
+    text-align: right;
+    display: flex;     
+    align-items: center; 
+    justify-content: flex-end;  
+}
+
+.likeButtonContainer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;  
+}
+
+.likeButtonContainer img {
+    width: 20px;    
+    height: 20px;   
+}
+
+.info-container p.journal-text {
+    margin-bottom: 0;  
+}
+.likeCount {
+  font-size: 14px;
+  color: #000000;
+}
