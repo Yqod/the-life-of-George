@@ -16,6 +16,7 @@ export default function App() {
             <main className="container">
                 {entryElements}
             </main>
+            
         </>
     )
   
