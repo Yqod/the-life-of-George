@@ -7,7 +7,10 @@ function IsFavorite({initialState}) {
 
   function handleClick() {
     setIsFavorite((prev) => !prev);
-    setLikeCount((prev) => isFavorite ? prev + 1 : prev - 1);
+    setLikeCount((prev) => {
+      const newCount = isFavorite ? prev + 1 : prev - 1;
+      return newCount === 0 ? "" : newCount;
+    });
   }
 
   return (
@@ -18,7 +21,7 @@ function IsFavorite({initialState}) {
         ) : (
           <img src="/images/likefull.png" alt="dislike" />
         )}
-        <span className="likeCount">{likeCount}</span>
+        {likeCount ? <span className="likeCount">{likeCount}</span> : null}
       </button>
     </div>
   );
